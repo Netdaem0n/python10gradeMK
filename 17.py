@@ -22,3 +22,8 @@ print(len(data))
 data2 = [data[x]+data[x+1] for x in range(0, int(len(data)), 2)]
 print(data2)
 print(len(data2))
+answer1 = [x for x in data2 if x % 120 == 0]
+print(answer1)
+print(f"Количество пар элементов последовательности,\n"
+      f"у которых сумма элементов кратна 120 - {len(answer1)}")
+print(f"Максимальная из сумм - {max(answer1)}")
